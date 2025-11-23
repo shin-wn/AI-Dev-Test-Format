@@ -1,4 +1,5 @@
 import pytest
+import torch
 from src.models.yolo_like import YoloLikeModel
 
 from .perf_utils import benchmark_fn
