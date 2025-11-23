@@ -16,7 +16,7 @@ class FakeLLM:
         return "Hello"
 
 
-@pytest.fixture
+@pytest.fixture  # テスト関数の引数に指定して使用
 def fake_tools():
     class ToolBox:
         def weather(self, location: str):
@@ -25,7 +25,7 @@ def fake_tools():
     return ToolBox()
 
 
-@pytest.fixture
+@pytest.fixture  # テスト関数の引数に指定して使用
 def agent(fake_tools):
     return MyAgent(llm_client=FakeLLM(), tools=fake_tools)
 
