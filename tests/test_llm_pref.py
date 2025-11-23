@@ -5,7 +5,7 @@ from src.optim.attention_flash import FlashTransformer
 
 from .perf_utils import benchmark_fn, measure_gpu_memory
 
-pytestmark = pytest.mark.perf  # このファイル全体を perf テストとしてマーク
+pytestmark = pytest.mark.perf_llm  # このファイル全体を perf_llm テストとしてマーク
 
 
 @pytest.fixture(scope="session")

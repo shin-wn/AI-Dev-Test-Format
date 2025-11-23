@@ -4,7 +4,7 @@ from src.models.yolo_like import YoloLikeModel
 
 from .perf_utils import benchmark_fn
 
-pytestmark = pytest.mark.perf
+pytestmark = pytest.mark.perf_yolo  # このファイル全体を perf_yolo テストとしてマーク
 
 
 @pytest.fixture(scope="session")

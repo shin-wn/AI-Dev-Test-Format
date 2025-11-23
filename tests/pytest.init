@@ -1,5 +1,6 @@
 [pytest]
 markers =
     smoke: quick checks for CI
-    perf: performance / memory benchmarks
+    perf_llm: performance benchmarks for LLM models
+    perf_yolo: performance benchmarks for YOLO models
     gpu: tests that require GPU
