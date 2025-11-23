@@ -24,17 +24,27 @@
 pytest -m smoke
 ```
 
+@pytest.mark.smoke でマークされたテストのみ実行。
+
 - 性能テスト（GPUのみ）：
 
 ```bash
 pytest -m "perf and gpu"
 ```
 
+@pytest.mark.perf かつ @pytest.mark.gpu でマークされたテストのみ実行。
+
 - 全テスト：
 
 ```bash
 pytest
 ```
+
+### 使用ライブラリ
+
+- pytest: テストフレームワーク
+- psutil: process and system utilities  
+    Pythonでプロセスやシステム情報（CPU、メモリ、ディスク、ネットワークなど）を簡単に取得できるライブラリ。
 
 ### 使用プロンプト
 
